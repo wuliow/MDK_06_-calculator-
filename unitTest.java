@@ -48,7 +48,7 @@ public class CalculatorTest {
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         Calculator.main(new String[]{});
-        Assertions.assertEquals("Ошибка: деление на 0\n", getOutput());
+        Assertions.assertEquals("Ошибка: деление на 0 невозможно\n", getOutput());
     }
 
     @Test
